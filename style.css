@@ -8,55 +8,6 @@
 }
 
 
-/* Shared Styles */
-
-.display-flex {
-    display: flex;
-}
-
-.color1 {
-    color: orange;
-}
-
-.color2 {
-    color: #01ACFD;
-}
-
-.color3 {
-    color: #05D4DF;
-}
-
-.color4 {
-    color: #5D58EF;
-}
-
-.color5 {
-    color: #64C8FF;
-}
-
-.color6 {
-    color: #F0AA00;
-}
-
-.color7 {
-    color: #8700FF;
-}
-
-.color8 {
-    background-color: #3CD8E8;
-}
-
-.color9 {
-    background-color: #95B226;
-}
-
-.color10 {
-    background-color: #5D58F0;
-}
-
-.font-color-white {
-    color: #FFFFFF;
-}
 
 /* font weight bold */
 
@@ -82,12 +33,13 @@
     margin-right: 32px;
 }
 
-.navbar, .banner {
+.navbar, 
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.logo {
+.navbar-logo-title {
     gap: 11px;
     align-items: center;
 }
@@ -106,7 +58,7 @@
     border-radius: 12px;
 }
 
-.div-1 {
+.div-A {
     display: none;
 }
 
@@ -138,11 +90,6 @@
 }
 
 
-/* Main content */
-main , .stories, .curriculum{
-    max-width: 1440px;
-    margin: 0 auto;
-}
 
 /* Standard Curriculum styles */
 
@@ -151,6 +98,7 @@ main , .stories, .curriculum{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 
 .section-title {
@@ -208,7 +156,8 @@ main , .stories, .curriculum{
     margin-bottom: 80px;
 }
 
-.icon1, .icon2 {
+.icon1, 
+.icon2 {
     line-height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -227,6 +176,8 @@ main , .stories, .curriculum{
     background-position: center;
 }
 
+
+
 .stories-title {
     font-size: 2.875rem;
     color: #000000;
@@ -243,7 +194,7 @@ main , .stories, .curriculum{
     row-gap: 19px;
 }
 
-.story1 {
+.story-left {
     grid-row: 1/3;
     grid-column: 1/2;
     display: flex;
@@ -263,7 +214,8 @@ main , .stories, .curriculum{
     border: none;
 }
 
-.story>img , .story1>img {
+.story>img , 
+.story1>img {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -304,8 +256,8 @@ main , .stories, .curriculum{
 }
 
 .view {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     text-align: center;
 }
 
@@ -377,23 +329,25 @@ footer {
 
 /* Marquee tag */
 
-.mq {
+.mrq {
     position: sticky;
     background-color: khaki;
 }
 
-.mq> div {
+.mrq> div {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 @media screen and (max-width:576px) {
 
-    .contact , .nav-links , .logo-title {
+    .contact , 
+    .nav-links , 
+    .logo-title {
         display: none;
     }
 
-    .div-1 {
+    .div-A {
         display: inline-block;
     }
 
@@ -423,7 +377,7 @@ footer {
         grid-template-rows: repeat(2,1fr);
     }
 
-    .story1 {
+    .story-left {
         display: none;
     }
 
@@ -439,3 +393,58 @@ footer {
 }
 
 
+/* Shared Styles */
+
+.display-flex {
+    display: flex;
+}
+
+.color1 {
+    color: orange;
+}
+
+.color2 {
+    color: #01ACFD;
+}
+
+.color3 {
+    color: #05D4DF;
+}
+
+.color4 {
+    color: #5D58EF;
+}
+
+.color5 {
+    color: #64C8FF;
+}
+
+.color6 {
+    color: #F0AA00;
+}
+
+.color7 {
+    color: #8700FF;
+}
+
+.color8 {
+    background-color: #3CD8E8;
+}
+
+.color9 {
+    background-color: #95B226;
+}
+
+.color10 {
+    background-color: #5D58F0;
+}
+
+.font-color-white {
+    color: #FFFFFF;
+}
+
+/* wrap */
+.story-wrap, .curriculum-wrap{
+    max-width: 80%;
+    margin:  0 auto;
+}
